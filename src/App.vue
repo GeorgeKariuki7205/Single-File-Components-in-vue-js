@@ -1,11 +1,15 @@
 <template>
   <div id="app"  style="text-align:center;background-color:rgb(173,172,172);">
     <h1 class="text-center text-white" style="font-family:'Aguafina Script', cursive;">Single File Component Vue Applications.</h1>
+    
     <div class="container">
          <CalenderWeek/>
         <CalenderEntry/>
-        
+          
     </div>
+    <div>
+      <CalenderFooter/> 
+      </div>
     </div>
   <!-- </div> -->
 </template>
@@ -15,13 +19,14 @@
 
 import CalenderWeek from './components/CalenderWeek.vue';
 import CalenderEntry from './components/CalenderEntry.vue';
-
+import CalenderFooter from './components/CalenderFooter.vue'
 export default {
   name: 'app',
   components: {
     // HellCalenderoWorld
     CalenderEntry,
-    CalenderWeek
+    CalenderWeek,
+    CalenderFooter
   }
 }
 </script>

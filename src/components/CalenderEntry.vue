@@ -1,7 +1,7 @@
 <template>
      <div>
          <div class="row" style="margin-top:5%;">
-                <div class="col-4 offset-4">
+                <div class="col-sm-12 col-md-6 offset-md-3">
                     <div class="card">
                         <div class="card-header" style="background-color:#8ecf88;">
                             <h5 class="mb-0">Add Event...</h5>
