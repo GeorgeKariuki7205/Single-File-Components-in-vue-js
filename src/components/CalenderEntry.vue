@@ -7,6 +7,7 @@
                             <h5 class="mb-0">Add Event...</h5>
                         </div>
                         <div class="card-body">
+                            <span>{{titleOfDay}}</span>
                             <form>
                                 <div class="form-group"><select class="form-control"><option value="Monday" selected="">Monday</option><option value="Teusday">Teusday</option><option value="Wednesday">Wednesday</option><option value="Thursday">Thursday</option><option value="Friday">Friday</option></select></div>
                                 <div
@@ -25,8 +26,14 @@
     </div>
 </template>
 <script>
+import {store} from '../store.js'
 export default {
-    name:'CalenderEntry'
+    name:'CalenderEntry',
+    computed: {
+        titleOfDay(){
+            return store.getActiveDay().fullTitle;
+        }
+    },
 }
 </script>
 <style lang="scss">

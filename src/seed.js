@@ -1,48 +1,65 @@
 export const seedData = [
     {
-        id:1,
-        abbTitle: 'Mon',
-        fullTitle: 'Monday',
-        events: [
-            {details: 'Groceries 1', edit: false},
-            {details: 'Vihicle 1', edit: false},
-        ]
+      id: 1,
+      abbvTitle: 'Mon',
+      fullTitle: 'Monday',
+      "events": [
+        { "details": "Get Groceries", "edit": false },
+        { "details": "Carpool", "edit": false }
+      ],
+      "active": true
     },
     {
-        id:2,
-        abbTitle: 'Teu',
-        fullTitle: 'Teusday',
-        events: [
-            {details: 'Groceries 2', edit: false},
-            {details: 'Vihicle 2', edit: false},
-        ]
+      id: 2,
+      abbvTitle: 'Tue',
+      fullTitle: 'Tuesday',
+      "events": [
+        { "details": "Yoga/Gym", "edit": false }
+      ],
+      "active": false
     },
     {
-        id:3,
-        abbTitle: 'Wed',
-        fullTitle: 'Wednesday',
-        events: [
-            {details: 'Groceries 3', edit: false},
-            {details: 'Vihicle 3', edit: false},
-        ]
+      id: 3,
+      abbvTitle: 'Wed',
+      fullTitle: 'Wednesday',
+      "events": [
+        { "details": "Work social", "edit": false }
+      ],
+      "active": false
     },
     {
-        id:4,
-        abbTitle: 'Thurs',
-        fullTitle: 'Thursday',
-        events: [
-            {details: 'Groceries 4', edit: false},
-            {details: 'Vihicle 4', edit: false},
-        ]
+      id: 4,
+      abbvTitle: 'Thu',
+      fullTitle: 'Thursday',
+      "events": [],
+      "active": false
     },
     {
-        id:5,
-        abbTitle: 'Fri',
-        fullTitle: 'Friday',
-        events: [
-            {details: 'Groceries 5', edit: false},
-            {details: 'Vihicle 5', edit: false},
-        ]
+      id: 5,
+      abbvTitle: 'Fri',
+      fullTitle: 'Friday',
+      "events": [
+        { "details": "Friday dinner/drinks", "edit": false }
+      ],
+      "active": false
     },
-
-]
+    {
+      id: 6,
+      abbvTitle: 'Sat',
+      fullTitle: 'Saturday',
+      "events": [
+        { "details": "Chill with the parents", "edit": false }
+      ],
+      "active": false
+    },
+    {
+      id: 7,
+      abbvTitle: 'Sun',
+      fullTitle: 'Sunday',
+      "events": [
+        { "details": "Netflix/Chill", "edit": false }
+      ],
+      "active": false
+    }
+  ]
+  
