@@ -13,9 +13,9 @@
                                 <div
                                     class="form-group">
                                     <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text" style="background-color:rgb(188,203,218);"><i class="fa fa-pencil-square-o" style="font-size:22px;background-color:#ffffff;"></i></span></div><input class="form-control" type="text">
+                                        <div class="input-group-prepend"><span class="input-group-text" style="background-color:rgb(188,203,218);"><i class="fa fa-pencil-square-o" style="font-size:22px;background-color:#ffffff;"></i></span></div><input class="form-control" type="text" v-model="inputEntry" placeholder="Enter Text">
                                         <div
-                                            class="input-group-append"><button class="btn btn-primary" type="button">Add.</button></div>
+                                            class="input-group-append"><button class="btn btn-primary" @click="submitEvents(inputEntry)"  type="button">Add.</button></div>
                         </div>
                     </div>
                     </form>
@@ -34,6 +34,15 @@ export default {
             return store.getActiveDay().fullTitle;
         }
     },
+    data(){
+        return {inputEntry:''}
+    },
+    methods: {
+        submitEvents(eventDetails){
+            store.submitEvent(eventDetails);
+            this.inputEntry= '';
+        }
+    }
 }
 </script>
 <style lang="scss">

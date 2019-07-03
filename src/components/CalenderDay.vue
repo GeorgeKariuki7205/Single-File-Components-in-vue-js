@@ -1,5 +1,5 @@
 <template>
-                    <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 offset-sm-1" style="margin-bottom:7%;" @click = "setActiveDay(day.id)">
+                    <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3 offset-sm-1" style="margin-bottom:7%;cursor:pointer;" @click = "setActiveDay(day.id)">
                 <div class="card">
                     <div class="card-header" style="background-color:#54cf59;">
                         <h5 class="mb-0">{{day.fullTitle}}</h5>
@@ -24,6 +24,7 @@ export default {
     methods: {
         setActiveDay(dayId){
             store.setActiveDay(dayId);
+            alert(dayId);
         }
     },
 }
