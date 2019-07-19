@@ -24,7 +24,8 @@ export default {
     methods: {
         setActiveDay(dayId){
             store.setActiveDay(dayId);
-            alert(dayId);
+        document.write(this.day.fullTitle);
+ 
         }
     },
 }
